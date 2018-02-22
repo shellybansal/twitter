@@ -1,0 +1,21 @@
+<form class="form-horizontal">
+    <div class="form-group form-group-lg">
+        <div class="col-sm-10">
+            <textarea class="form-control" rows="3" id="tweet" ng-model="tweet" placeholder="What's on your mind today!"></textarea>
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-primary" type="button" ng-click="postTweet()">Tweet</button>
+        </div>
+    </div>
+</form>
+<div class="row">
+    <div class="col-sm-12"ng-repeat="x in yourTweets">
+        <strong>{{x[0][2]}}</strong><br>
+        <h5>{{x[0][1]}}</h5>
+        <div class="row">
+            <div class="col-md-6"><input type="submit"class=" btn btn-default bg-primary text-white" style="align:centre" value="{{x[1][0]}} likes" id="viewTweets" ng-click="viewLikes(x)"></div>
+            <div class="col-md-6"><input type="submit"class=" btn btn-default bg-primary text-white" style="align:centre" value="Delete" id="unFollow" ng-click="deleteTweet(x[0][3])"></div>
+        </div>
+        <hr>
+    </div>
+</div>

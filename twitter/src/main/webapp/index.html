@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--css file reference-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <!--angular file source-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <!--ui-router reference-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    <!--local script-->
+    <script src="twitter.js"></script>
+    <!--css local file-->
+    <link rel="stylesheet" type="text/css" href="twitter1.css">
+    <title>Welcome</title>
+</head>
+<body ng-app="twitter">
+
+    <div ui-view="headerDashBoard"></div>
+    <div ui-view="sideNavDashBoard"></div>
+    <div class="row" style="margin-top:50px">
+        <div class="col-md-2"></div>
+        <div class="col-md-10" ui-view="middleView"></div>
+    </div>
+</body>
+</html>

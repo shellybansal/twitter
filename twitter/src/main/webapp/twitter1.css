@@ -1,0 +1,97 @@
+
+.errorDisplay{
+text-align:right;
+color:red;
+
+}
+
+.col-sm-6{
+text-align:center;
+}
+
+
+aside a {
+                       padding: 6px 8px 6px 16px;
+                       text-decoration: none;
+                       font-size: 18px;
+                       color: #000000;
+                       display: block;
+
+}
+
+
+
+aside{
+                height: 100%;
+                width: 200px; /* Set the width of the sidebar */
+                position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+                top:80px; /* Stay at the top */
+                left: 0px;
+                z-index: 1;
+                overflow-x: hidden;
+                background-color:whitesmoke;
+
+}
+
+
+.navbar-fixed-left {
+  width: 200px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+  top:80px;
+  background-color:whitesmoke;
+
+}
+
+.navbar-fixed-left .navbar-nav > a {
+  float: none;  /* Cancel default li float: left */
+  width: 150px;
+}
+
+
+.wrap {
+    text-align: right;
+    }
+
+.wrap button {
+
+    top: 40%;
+}
+
+
+.r1 a {
+   padding: 6px 8px 6px 16px;
+   text-decoration: none;
+   font-size: 18px;
+   color: #000000;
+   display: block;
+
+}
+
+
+.image {
+    width: 100%;
+    height: 80px;
+}
+
+
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.header{
+
+
+
+                       text-decoration: none;
+                       font-size: 15px;
+                       color: #000000;
+
+
+}

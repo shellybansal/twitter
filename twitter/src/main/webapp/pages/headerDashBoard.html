@@ -1,0 +1,35 @@
+
+
+    <!-- Header class -->
+
+    <div class="row nav-fixed header" style="background-color:#79C7D1;border-right-width: 0px;margin-right: 0px;">
+
+        <div class="col-md-2" style="padding-right:1px"ui-sref="timeLine">
+            <img class="img-fluid image" src="twitter.png" alt="Twitter"></a>
+        </div>
+        <div class="col-md-5 header" style="padding-left:0px;margin-top: 20px;">
+            <div class="row">
+                <div class="col-md-3 r1" style="padding-left: 13px;padding-right: 0px;">
+                    <div ui-sref="timeLine"><a href='javascript:void(0);'>TimeLine</a></div>
+                </div>
+                <div class="col-md-3 r1" style="padding-left: 13px;padding-right: 0px;">
+                    <div ui-sref="stalkTweets"><a href='javascript:void(0);'>StalkTweets</a></div>
+                </div>
+                <div class="col-md-6 r1" style="padding-left: 0px;padding-right: 0px;" ui-sref="searchTweet">
+                    <input type="text" class="form-control" placeholder="Search User" id="searchUser" name="searchUser" ng-model="search" ng-keypress="searchUserMethod($event)">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"style="padding-left:30px;margin-top: 20px;">
+
+        <div class="col-md-1" style="margin-top: 20px;padding-left: 0px;margin-left: 60px;">
+            <div class="nav" ui-sref="logOut">
+                    <button class="btn btn-primary" type="button">Logout</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+

@@ -1,0 +1,12 @@
+<div class="col-md-8">
+    <div ng-repeat="x in loaded">
+        <div style="padding-bottom:  30px;padding-top:  20px;">
+            <strong>Twitter Id:</strong>{{x.userTName}}<br>
+            <strong>Name:</strong>{{x.fName}}{{x.lName}}<br>
+            <strong>Age:</strong>{{x.age}}<br>
+            <strong>City:</strong>{{x.city}}<br>
+            <input type="submit"class=" btn btn-default bg-primary text-white" style="align:centre" value="Follow" id="follow" ng-click="startFollowing(x.userTName)">
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,21 @@
+
+<div ng-repeat="x in info">
+    <div ng-show={{x}}.length==3>
+        <h6><strong>Twitter Id:</strong>{{x[1]}}</h6><br>
+        <h6><strong>Tweet:</strong>{{x[0]}}</h6>
+        <hr>
+    </div>
+    <div ng-show={{x}}.length==7>
+        <h6><strong>Twitter Id:</strong>{{x[0]}}</h6><br>
+        <h6><strong>Name:</strong>{{x[2]}} {{x[3]}}</h6><br>
+        <h6><strong>Email:</strong>{{x[1]}}</h6><br>
+        <h6><strong>City:</strong>{{x[4]}}</h6><br>
+        <div ng-show=(!{{x[6]}})>
+            <div class="col-md-4"><input type="submit"class=" btn btn-default bg-primary text-white" style="align:centre" value="Follow" id="like" ng-click="followUser(x[0])"></div>
+        </div>
+        <div ng-show=({{x[6]}})>
+            <div class="col-md-4"><input type="submit"class=" btn btn-default bg-primary text-white" style="align:centre" value="UnFollow" id="unLike" ng-click="unFollowUser(x[0])"></div>
+        </div>
+        <hr>
+    </div>
+</div>
